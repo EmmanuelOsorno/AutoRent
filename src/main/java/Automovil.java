@@ -19,14 +19,14 @@ public class Automovil extends Vehiculo{
     //
     @Override
     public double calcularTarifa(int dias) {
-        double tarifaAuto=(2000+TARIFA)*dias;
+        double tarifaAuto=(20000+TARIFA)*dias;
         return tarifaAuto;
     }
 
     //
     @Override
     public void mostrarDatos() {
-        System.out.println("Datos del automovil: ");
+        System.out.println("AUTOMOVIL: ");
         System.out.println("Placa: "+getPlaca());
         System.out.println("Marca: "+getMarca());
         System.out.println("Modelo: "+getModelo());
