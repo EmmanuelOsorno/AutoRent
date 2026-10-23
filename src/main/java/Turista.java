@@ -18,7 +18,7 @@ public class Turista extends Cliente{
 
     @Override
     public void mostrarDatos() {
-        System.out.println("Datos del turista:");
+        System.out.println("TURISTA:");
         System.out.println("Nombre: "+getNombre());
         System.out.println("Correo: "+getCorreo());
         System.out.println("Documento: "+getDocumento());
