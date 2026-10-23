@@ -32,4 +32,9 @@ public class Cliente {
     public void setDocumento(String documento) {
         this.documento = documento;
     }
+
+    //
+    public void mostrarDatos() {
+        System.out.println("Datos del cliente...");
+    }
 }
