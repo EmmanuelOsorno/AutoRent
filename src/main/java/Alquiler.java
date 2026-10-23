@@ -55,4 +55,25 @@ public class Alquiler {
     public void setVehiculo(Vehiculo vehiculo) {
         this.vehiculo = vehiculo;
     }
+
+    //
+    public double calcularTotalTarifa(){
+        double tarifaTotal=vehiculo.calcularTarifa(diasContratado);
+    return tarifaTotal;
+    }
+
+    //
+    public void mostrarAlquiler(){
+        System.out.println("=====DATOS DEL ALQUILER=====");
+        System.out.println("Codigo del alquiler: "+codigo);
+        System.out.println("Fecha en la que se realizó el alquiler: "+fecha);
+        System.out.println("Dias de contrato: "+diasContratado);
+        System.out.println("=====CLIENTE=====");
+        cliente.mostrarDatos();
+        System.out.println("=====VEHICULO ALQUILADO=====");
+        vehiculo.mostrarDatos();
+        System.out.println("COSTO TOTAL DEL ALQUILER: "+calcularTotalTarifa());
+
+    }
+
 }
