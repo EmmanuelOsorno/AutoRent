@@ -25,7 +25,7 @@ public class Motocicleta extends Vehiculo{
     //
     @Override
     public void mostrarDatos() {
-        System.out.println("Datos del automovil:\n");
+        System.out.println("Datos de la motocicleta:");
         System.out.println("Placa: " + getPlaca());
         System.out.println("Marca: " + getMarca());
         System.out.println("Modelo: " + getModelo());
