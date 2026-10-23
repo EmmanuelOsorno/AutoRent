@@ -56,4 +56,22 @@ public abstract class Vehiculo {
     public void setEstado(Estado estado) {
         this.estado = estado;
     }
+
+    //
+    public abstract double calcularTarifa(int dias);
+
+    //
+    public void mostrarDatos(){
+        System.out.println("Mostrando datos...");
+    }
+
+    //
+    @Override
+    public String toString() {
+        return "placa:" + placa +
+                "\nmarca: " + marca +
+                "\nmodelo='" + modelo +
+                "\naño de fabricacion: " + anioFabricacion +
+                "\nestado: " + estado;
+    }
 }
