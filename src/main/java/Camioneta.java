@@ -18,14 +18,14 @@ public class Camioneta extends Vehiculo{
 
     @Override
     public double calcularTarifa(int dias) {
-        double tarifaCamioneta=(50000*TARIFA)*dias;
+        double tarifaCamioneta=(50000+TARIFA)*dias;
         return tarifaCamioneta;
     }
 
     //
     @Override
     public void mostrarDatos() {
-        System.out.println("Datos de la camioneta:");
+        System.out.println("CAMIONETA:");
         System.out.println("Placa: " + getPlaca());
         System.out.println("Marca: " + getMarca());
         System.out.println("Modelo: " + getModelo());
